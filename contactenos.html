@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Veterinaria</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .container{ 
+            width: 85% !important;  
+        }
+        </style>
+</head>
+
+<body class=" green lighten-5">
+
+    <nav class="green darken-2">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Veterinaria</a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="badges.html">Reservar</a></li>
+                <li class="active"><a href="contactenos.html">Contactenos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="row container">
+        <div class="col m6 s12">
+            <h2>Contáctenos</h2>
+
+            <p>
+                Direccion : Carrera 50 # 78 - 2
+            </p>
+            <p>
+                Telefono : 4-456-5432
+            </p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6926791204273!2d-75.5799469858784!3d6.3040490954375255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442ed93dec4a5b%3A0xf1c334c8731c9b28!2sParque+Biblioteca+Gabriel+Garc%C3%ADa+M%C3%A1rquez+Doce+de+Octubre!5e0!3m2!1ses!2sco!4v1541256415034"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="col m6 s12">
+            <form>
+                <div class="row">
+                    <h4>Escríbenos</h4>
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombres</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Apellidos</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input field col s12">
+                        <select id="motivo">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="1">Sugerencia</option>
+                            <option value="2">Queja</option>
+                            <option value="3">Reclamo</option>
+                            <option value="4">Felicitación</option>
+                        </select>
+                        <label>Motivo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input  id="asunto" type="text" class="validate">
+                        <label for="asunto">Asunto</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+
+                        <textarea id="mensaje" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensaje</label>
+                    </div>
+                </div>
+
+                <div class="row center-align">
+                    <a class="btn" onclick="enviar()">Enviar</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        $('.slider').slider();
+        $('select').formSelect();
+
+    </script>
+    <script src="contactenos.js"></script>
+</body>
+
+</html>
