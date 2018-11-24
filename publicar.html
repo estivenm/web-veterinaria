@@ -32,8 +32,8 @@
 
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="publicar.html">Publicar adopción</a></li>
-                <li class="active"><a href="contactenos.html">Contactenos</a></li>
+                <li class="active"><a href="publicar.html">Publicar adopción</a></li>
+                <li ><a href="contactenos.html">Contactenos</a></li>
             </ul>
         </div>
     </nav>
@@ -57,7 +57,7 @@
         <div class="col m6 s12">
             <form>
                 <div class="row">
-                    <h4>Escríbenos</h4>
+                    <h4>Datos personales</h4>
                     <div class="input-field col s6">
                         <input id="first_name" type="text" class="validate">
                         <label for="first_name">Nombres</label>
@@ -73,29 +73,23 @@
                         <label for="email">Email</label>
                     </div>
                 </div>
+
+                <h4>Datos de la mascota</h4>
                 <div class="row">
-                    <div class="input field col s12">
-                        <select id="motivo">
-                            <option value="" disabled selected>Seleccione una opción</option>
-                            <option value="1">Sugerencia</option>
-                            <option value="2">Queja</option>
-                            <option value="3">Reclamo</option>
-                            <option value="4">Felicitación</option>
-                        </select>
-                        <label>Motivo</label>
+                    <div class="input-field col s6">
+                        <input  id="nombre_mascota" type="text" class="validate">
+                        <label for="nombre_mascota">Nombre Mascota</label>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input  id="asunto" type="text" class="validate">
-                        <label for="asunto">Asunto</label>
+                    <div class="input-field col s6">
+                        <input  id="edad" type="text" class="validate">
+                        <label for="edad">Edad</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
 
-                        <textarea id="mensaje" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Mensaje</label>
+                        <textarea id="descripcion" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Descripción</label>
                     </div>
                 </div>
 
@@ -112,7 +106,7 @@
         $('select').formSelect();
 
     </script>
-    <script src="contactenos.js"></script>
+    <script src="publicar.js"></script>
 </body>
 
 </html>
